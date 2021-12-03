@@ -33,7 +33,7 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function() {
 'Admin\NewsController@create');
     Route::post('profile,create',
 'Admin\ProfileController@create');
-　　Route::post('profile/edit',
+    Route::post('profile/edit',
 'Admin\ProfileController@update');
 });
 
