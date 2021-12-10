@@ -64,8 +64,10 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function() {
 'Admin\ProfileController@edit');
     Route::get('profile/edit',
 'Admin\ProfileController@edit');
-    Route::post('profile/edit',
-'Admin\ProfileController@update');
+    Route::get('profile/delete', 
+'Admin\ProfileController@delete');
+    Route::get('profile',
+'Admin\ProfileController@index');
 //     プロフィール一覧が必要な場合
 //     Route::get('news', 
 // 'Admin\NewsController@index');

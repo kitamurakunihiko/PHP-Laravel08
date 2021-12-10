@@ -45,6 +45,8 @@ class NewsController extends Controller
       return redirect('admin/news/create');
   }
   
+  
+  
   public function index(Request $request)
     {
         $cond_title = $request->cond_title;
@@ -68,6 +70,7 @@ class NewsController extends Controller
       }
       return view('admin.news.edit', ['news_form' => $news]);
   }
+
 
 
   public function update(Request $request)
